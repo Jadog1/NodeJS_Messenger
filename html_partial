@@ -1,0 +1,45 @@
+<style>
+    #chatBox {
+        width: 100%;
+        max-width: 300px;
+        height: 100px;
+        border: 2px solid black;
+        overflow: auto;
+    }
+
+    .otherUser,
+    .meUser {
+        width: 75%;
+        border-radius: 5%;
+        margin-bottom: 10px;
+    }
+
+    .otherUser {
+        background-color: #89CFF0;
+        float: left;
+    }
+
+    .meUser {
+        background-color: gainsboro;
+        float: right;
+    }
+
+    .dot {
+        height: 25px;
+        width: 25px;
+        background-color: rgb(253, 0, 0);
+        border-radius: 50%;
+        display: none;
+    }
+
+    #sendMessage {
+        font-size: 13px;
+    }
+</style>
+
+
+<h1>Messaging app</h1><span class='dot'>u</span>
+<div id='chatBox'></div>
+<input type='text' id='message' />
+<button class='btn btn-primary' id='sendMessage'>Send message</button>
+<script src="/js/ChatImport.js"></script>
